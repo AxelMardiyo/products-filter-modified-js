@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filters</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-all duration-300">
+  <div class="container mx-auto p-4">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold">Our Products</h2>
+      <!-- <button id="theme-toggle" class="px-4 py-2 rounded bg-gray-800 text-white dark:bg-gray-200 dark:text-gray-800 transition-all duration-300">
+        Toggle Theme
+      </button> -->
+    </div>
+    <div class="border-t-2 border-gray-300 mb-6"></div>
+
+    <section class="flex flex-col lg:flex-row gap-6">
+      <!-- filters -->
+      <div class="w-full lg:w-1/4">
+        <!-- search -->
+        <form class="input-form mb-4">
+          <input type="text" class="search-input w-full px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200"
+            placeholder="Search..." />
+        </form>
+        <!-- categories -->
+        <h5 class="text-lg font-semibold mb-2">Company</h5>
+        <article class="companies space-y-2">
+          <!-- Filter buttons will be injected here -->
+        </article>
+      </div>
+
+      <!-- products -->
+      <div class="products-container w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product items will be injected here -->
+      </div>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
